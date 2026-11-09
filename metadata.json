@@ -1,0 +1,6 @@
+{
+  "name": "GCD - Gestion des Candidatures Doctorales USMBA",
+  "description": "Plateforme officielle de Gestion des Candidatures et Réinscriptions Doctorales de l'Université Sidi Mohamed Ben Abdellah (USMBA) de Fès.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

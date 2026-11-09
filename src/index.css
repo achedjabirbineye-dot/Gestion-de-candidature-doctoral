@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Badges de Statuts Métier USMBA GCD */
+.badge-valide {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-encours {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-incomplet {
+  background-color: #ffe4e6;
+  color: #9f1239;
+  border: 1px solid #fecdd3;
+  animation: pulseBadge 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.badge-refuse {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+/* Ligne mise en évidence pour dossiers incomplets avec délai */
+.row-incomplet {
+  background-color: #fff1f2 !important;
+  border-left: 4px solid #e11d48 !important;
+}
+
+.row-incomplet:hover {
+  background-color: #ffe4e6 !important;
+}
+
+/* Pulsation d'alerte pour les dossiers nécessitant un rattrapage */
+@keyframes pulseBadge {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
